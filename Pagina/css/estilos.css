@@ -1,0 +1,143 @@
+*{
+    /* Quitamos los margenes que el navegador pone por default */
+    margin: 0;
+    padding: 0;
+}
+/* p{
+    margin: 50px 0 0 0;
+    border: dotted 3px blue;
+    padding: 30px;
+}
+img{
+    
+} */
+
+/*Barra de menus*/
+a{
+    /* Quitamos los subrayados */
+    text-decoration: none;
+    color: white;
+}
+li{
+    border: solid 1px red;
+    padding: 10px;
+    background-color: rgb(46, 46, 46);
+    /* Tamaño */
+    width: 200px;
+    margin: 15px;
+    text-align: center;
+    /* Redondea el borde */
+    border-radius: 30px;
+    /* Datos que lleva: arriba/abajo izquierda/derecha intensidad color */
+    /* Valores negativos o positivos */
+    box-shadow: 3px 3px 3px black;
+    /* Damos el estio a la lista, ya sea punto, num, nada, etc */
+    list-style-type: none;
+}
+nav p{
+    font-weight: bold;
+    color: rgb(46, 46, 46);
+    font-size: 30px;
+    text-shadow: -3px -3px 3px rgb(166, 170, 182) ;
+    letter-spacing: 3px;
+}
+/* La anchura es width, se pone en % y la altura es height se pone en vh*/
+header{
+    /* degradado de color */
+    background: linear-gradient(rgb(255, 0, 0),grey,#fff,#fff);
+    padding: 80px;
+    /* display: flex; */
+    width: 100%;
+    height: 100vh;
+    
+}
+img{
+    width: 300px;
+}
+ul{
+    display: flex;
+}
+/* footer{
+    background-color: cyan;
+    width: 30%;
+    height: 30vh;
+    /* Hacemos que todo el contenido se meta en la cajita definida arriba 
+    overflow: auto;
+} */
+nav{
+    /* lo ponemos todo al mismo nivel */
+    display: flex;
+    height: 20vh;
+    /* align alinea  */
+    align-items: center;
+    justify-content: space-between;
+}
+/* Le ponemos el punto para que busque la clase */
+.caja{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cajita{
+    width: 50%;
+}
+.cajita img{
+    width: 60%;
+}
+h1{
+    /* 4 veces su tamaño original */
+    font-size: 4em; 
+    text-align: left;  
+}
+/* span sirve para darle formato solo a una parte del texto */
+span{
+    color: red;
+    font-style: italic;
+    text-shadow: 3px 3px 2px black;
+}
+/* hover reacciona a la posicion del mouse */
+li:hover{
+    /* Crea una opacidad, va de 0 a 1*/
+    opacity: 0.5;
+    /* background-color: white;
+    color: rgb(46, 46, 46);
+    font-size: 3em; */
+}
+/* Comienza seccion acerca de */
+
+.acerca{
+    width: 100%;
+    height: 80vh;
+    /* con .. sale de la carpeta, luego ponemos la direccion de la img */
+    background: url(../img/vectorrojo.jpg);
+    /* Si la imagen es muy pequeña sirve para que no se repita */
+    background-repeat: no-repeat;
+    /* Lo centramos */
+    background-position: center;
+    /* Hace que se expanda por todo el fondo */
+    background-size: cover;
+} 
+
+h2{
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.acerca2{
+    width: 60%;
+    height: 50vh;
+    text-align: justify;
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.459), rgba(240, 135, 135, 0.493));
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.acerca1{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
